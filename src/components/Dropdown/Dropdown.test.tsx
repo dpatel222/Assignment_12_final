@@ -20,4 +20,11 @@ describe("Dropdown component", () => {
     expect(dropdown).toHaveStyle("cursor: pointer");
     expect(dropdown).toHaveStyle("background-color: green");
   });
+
+  test("is visible", () => {
+    const { getByRole } = render(<Dropdown />);
+    const dropdown = getByRole("combobox");
+
+    expect(dropdown).toBeVisible();
+  });
 });

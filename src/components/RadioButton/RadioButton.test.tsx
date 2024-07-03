@@ -26,3 +26,8 @@ test("RadioButton is enabled and changes color to green when the disabled prop i
   expect(labelElement).toHaveStyle("cursor: pointer");
   expect(labelElement).toHaveStyle("background-color: green");
 });
+test("RadioButton is visible", () => {
+  render(<RadioButton />);
+  const radioElement = screen.getByRole("radio");
+  expect(radioElement).toBeVisible();
+});

@@ -13,3 +13,8 @@ test("Button is not disabled when the disabled prop is false", () => {
   const buttonElement = screen.getByTestId("test-button");
   expect(buttonElement).not.toBeDisabled();
 });
+test("Button is visible", () => {
+  render(<Button data-testid="test-button" label="Click" />);
+  const buttonElement = screen.getByTestId("test-button");
+  expect(buttonElement).toBeVisible();
+});

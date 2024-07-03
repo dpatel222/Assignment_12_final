@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import { render, screen } from "@testing-library/react";
-import '@testing-library/jest-dom/extend-expect';
+import "@testing-library/jest-dom/extend-expect";
 import Label from "./Label";
 
 test("Label has correct styles when the disabled prop is true", () => {
@@ -15,4 +15,9 @@ test("Label has correct styles when the disabled prop is false", () => {
   const labelElement = screen.getByTestId("test-label");
   expect(labelElement).toHaveStyle(`background-color: green`);
   expect(labelElement).toHaveStyle(`cursor: default`);
+});
+test("Label is visible", () => {
+  render(<Label data-testid="test-label" text="Test Label" />);
+  const labelElement = screen.getByTestId("test-label");
+  expect(labelElement).toBeVisible();
 });
