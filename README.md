@@ -13,8 +13,7 @@ To set up and run this project, follow these steps:
 1. **Clone the repository**
 
     ```sh
-    git clone https://github.com/your-username/deep_patel_ui_garden.git
-    cd deep_patel_ui_garden
+    git clone 
     ```
 
 2. **Build the Docker image**
