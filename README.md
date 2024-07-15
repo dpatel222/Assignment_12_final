@@ -1,14 +1,10 @@
 # Deep Patel UI Garden
 
-This is a Dockerized Node.js project set up for running Storybook. Below are the steps to get started with this project.
 
-## Prerequisites
 
-- Docker installed on your machine
+
 
 ## Getting Started
-
-To set up and run this project, follow these steps:
 
 1. **Clone the repository**
 
