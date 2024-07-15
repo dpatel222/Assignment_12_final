@@ -15,12 +15,14 @@
 2. **Build the Docker image**
 
     ```sh
+    docker build -t "patel_deep_coding_assignment_12 ."
     docker build -t deep_patel_ui_garden .
     ```
 
 3. **Run the Docker container**
 
     ```sh
+    docker run --name patel_deep_coding_assignment_12 -dp 8083:8083 patel_deep_coding_assignment_12
     docker run -p 8083:8083 deep_patel_ui_garden
     ```
 
