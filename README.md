@@ -98,12 +98,15 @@ Each component folder in this project contains the following files:
 **Component_name.tsx**
 
 This file defines the main React component. It includes the component logic, state management, and JSX rendering. This is where you implement the actual functionality and presentation of the component.
-Component_name.stories.tsx
+
+**Component_name.stories.tsx**
 
 This file is used for Storybook, a tool for developing UI components in isolation. It defines different states and variations of the component, allowing you to visually test and document the component's behavior and appearance.
+
 **Component_name.types.tsx**
 
 This file contains TypeScript type definitions and interfaces for the component. It defines the props and state types used in the component, ensuring type safety and improving code readability and maintainability.
+
 **Component_name.tests.tsx**
 
 This file includes unit tests for the component. It uses a testing library (e.g., Jest and React Testing Library) to verify that the component behaves as expected, ensuring reliability and preventing regressions.
